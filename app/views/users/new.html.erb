@@ -1,18 +1,12 @@
 <%= render 'form' %>
 
 <script type="text/javascript">
-function updateInput() {
-	var elem = document.getElementById("name");
-	elem.value = "Ian Schoonover";
-}
-updateInput();
+	function submitAttendance() {
+	  var frm = document.getElementById('submitForm');
+	  if (frm) {
+	    frm.submit();
+	  }
+	}
 
-function submitAttendance() {
-  var frm = document.getElementById('submitForm');
-  if (frm) {
-    frm.submit();
-  }
-}
-
-submitAttendance();
+	submitAttendance();
 </script>
